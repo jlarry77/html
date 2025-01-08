@@ -1,0 +1,48 @@
+body {
+    background-color: #070707;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    padding: 15px;
+    font-weight: 100;
+}
+
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+    position:  relative;
+    z-index: 1;
+    font-weight: 50;
+}
+
+img {
+    position: absolute;
+
+
+    z-index: 0;
+    height: 100%;
+    opacity: 75%;
+    
+
+}
+
+a:hover {
+    color: lightslategray;
+    font-size: 20px;
+    margin: 2px;
+    padding-left: 20px;
+    font-weight: 50;
+}
+
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,190 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Sans-serif', Arial;
+    font-weight: 300;
+    background-color: #163b60;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px; /* Add padding to create space around white box */
+}
+
+/* Main content container to add white background with blue on the sides */
+.main-content {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul.left {
+    flex: 1;
+    gap: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+}
+
+header nav ul li a:hover {
+    color: #000;
+}
+
+header nav ul li img {
+    height: 60px;
+    width: auto;
+}
+
+/* Form Container */
+.flex-container {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    color: #163b60;
+    margin-bottom: 20px;
+}
+
+form p {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2e6da4;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #337ab7;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #163b60;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color:#163b60;
+    padding: 40px 0;
+    color: #333;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Links section (Privacy Policy and Terms of Use) */
+footer .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer .links a:hover {
+    color: #000;
+}
+
+/* Logos section (centered) */
+footer .logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 30px;
+    margin: 10px 0;
+}
+
+footer .logos img {
+    height: 50px;
+    width: auto;
+}
+
+/* Accreditation logos (BBB and CRA) */
+footer .accred {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 50px;
+    margin-top: 10px;
+}
+
+footer .accred img {
+    height: 75px;
+    width: auto;
+}
+
+hr {
+    margin:  30px;
+}

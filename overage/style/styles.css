@@ -1,0 +1,383 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    font-weight: 100;
+}
+
+/* Body Styling */
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1;
+    background-color: #163b60;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    width:  100%;
+    margin: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+
+}
+
+.main-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    width:  100%;
+    margin: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+
+}
+
+
+header img {
+    height: 75px;
+}
+
+.center-container {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 9px;
+}
+
+.index-login {
+    padding: 20px;
+}
+
+.index-registration {
+    padding: 20px;
+}
+
+.index-logout {
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    margin: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.button-container form button {
+    background: none;
+    border: black;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.button-container form button:hover {
+    color: #002fa7;
+    border-radius: 7px;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Flex Container for main layout */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Left Column Styling (Job Entry Form) */
+.left-column, .right-column {
+    width: 50%;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 10px 40px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Column Styling: Turn it into a vertical flex container */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #163b60;
+    padding: 0px;
+}
+
+/* Styling for individual rows (boxes) */
+.loss-entry,
+.right-lower-column {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+/* Adjust heights to ensure consistent layout */
+.loss-entry {
+    flex: 1;
+}
+
+.right-lower-column {
+    flex: 1;
+}
+
+
+/* Add spacing between the rows */
+.right-column > * {
+    margin-bottom: 10px;
+}
+
+/* Remove the bottom margin for the last box */
+.right-column > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Lower Columns: Flexbox for Totals and Logout */
+.totals-logout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #163b60;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height:  16em;
+
+}
+
+.totals-logout .totals {
+
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.totals-logout .links {
+
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.totals-logout .links h2 {
+    padding: 12%;
+}
+
+.totals-logout .logout {
+
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+}
+
+.totals-logout {
+
+    background-color: #163b60;
+    color: #333333;
+    border: 1px solid #163b60;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 99%;
+    margin-left: 10px;
+}
+
+
+.totals-logout h2 {
+    padding: 5px 0px 10px 0px;
+}
+
+
+/* Styling for Forms */
+form p {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    appearance: none;
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+select:hover {
+    border-color: rgb(223, 223, 223);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+/* Buttons as Text Links */
+button {
+    background: lightgray;
+    border-radius: 7px;
+    border: none;
+    color: #333333;
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #FFFFFF;
+    border-radius: 7px;
+    background-color: gray;
+}
+
+/* Responsive Main Content */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .lower-columns {
+        flex-direction: column;
+    }
+}
+
+/* Results Page Styling */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 20px auto;
+    padding: 15px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #8baaf8;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Center Title on Main Page */
+.main-content h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Fix Titles on Main Page */
+.main-content .left-column, .main-content .right-column {
+    margin: 0 auto;
+}
+
+/* Ensures Table Text is Dark */
+table, th, td {
+    color: #333333;
+}
+
+/* Center Containers on Index Page */
+.center-container {
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 20px;
+}
+
+.right-column {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loss-entry,
+.right-lower-column,
+.totals-logout {
+    margin-bottom: 10px;
+}
+
+/* Adjust page content to avoid overlap with header */
+.content {
+    margin-top: 80px; /* Adjust to match the header height */
+    z-index: 100;
+}
