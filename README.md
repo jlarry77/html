@@ -1,6 +1,6 @@
 HTML File Directory
 
-images                  - Image Repository for Websites
+images                  - Image Repository for Websites 
 index_backup.html       - Apache Default Landing Page
 index.php               - Landing Page for Digital Playground / Larryman Land
 lo_page                 - Developement files for Loan Officer Web Page
