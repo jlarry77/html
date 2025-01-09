@@ -16,6 +16,7 @@
     <li><a href="rbi">RBi-Realtors</a></li>
     <br>
     <li><a href="lo_page">Loan Officer Page</a></li>
-
+    <br>
+    <li><a href="login_template">Login Template</a></li>
 </body>
 </html>
