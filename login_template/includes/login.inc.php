@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 
 //  Verify that Request Method is 'POST'
@@ -6,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     //  Retrieve username and passowrd from Post Requst on Index.php
     $username = $_POST["user_name"];
-    $password = $_POST["password"];
+    $password = $_POST["user_pw"];
 
     try {
         // Include required files for database handling and login logic
@@ -18,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errors =[];
 
         //  Check for empty input fields
-        if (is_input_empty($username, $pwd)) {
+        if (is_input_empty($username, $password)) {
             $errors["empty_input"] = "Pleas fille in all fields.";
     }
     // Fetch user information from the database
@@ -31,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     //  Ensure password is correct
-    if (!is_username_wrong($result) && is_password_wrong($password, $result[$pwd])) {
+    if (!is_username_wrong($result) && is_password_wrong($password, $result["user_pw"])) {
         $errors["login_incorrect"] = "Incorrect password information!";
     }
 
@@ -41,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Store any errors in the Session and redirect back to index.php
     if ($errors) {
-        $_SESSION["errors_signup"] = $errors;
+        $_SESSION["errors_login"] = $errors;
         header("Location: ../index.php");
         die();
     }
@@ -50,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Create a new Session ID and append the User's ID
     $newSessionID = session_create_id();
     $sessionId = $newSessionId . "_" . $result["id"];
-    session_Id($sessionId);
+    session_id($sessionId);
 
     // Store user information in sessionvariables
     $_SESSION["user_id"] = $result["id"];

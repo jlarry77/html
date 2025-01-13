@@ -8,11 +8,11 @@ session_set_cookie_params([                     //  Accepts array inside paramet
     'lifetime' => 1800,                         //  Lifetime of cookie in seconds
 
     // This will need to be reset to correct domain each time template is used
-    'domain' => 'login_template.sr-one.net',
+    'domain' => '100.107.139.13',
     
     'path' => '/',                              // Include any subdirectories in domain
-    'secure' => true,                           // Allow to only use HTTPS connection
-    'httponly' => true                          //  Prevent users from adding things like Javascript to page
+    'secure' => false,                           // Allow to only use HTTPS connection
+    'httponly' => false                          //  Prevent users from adding things like Javascript to page
 ]);
 
 // Start Session

@@ -1,3 +1,16 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+
+require_once 'includes/config_session.inc.php';
+// require_once 'includes/signup_view.inc.php';
+require_once 'includes/login_view.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +32,21 @@
     <!-- Form to submit user name and password -->
 
     
-    <form class="login_form" action="submit" method="POST">
+    <form class="login_form" action="includes/login.inc.php" method="POST">
         <h3>User Login</h3>
     
         <!-- Inputs for Form -->
         <div class="user">
             <h3>User Name <i>required</i></h3>
-            <input type="text" namne="user_name" placeholder="User Name">
+            <input type="text" name="user_name" placeholder="User Name">
         </div>
         
         <div class="password">
             <h3>Password <i>required</i></h3>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="user_pw" placeholder="Password">
         </div>
+        <br>
+        <button type="submit">Submit</button>
         </form>
 
 </body>
