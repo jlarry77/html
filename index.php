@@ -9,7 +9,9 @@
 <body>
     <img src="/images/digital-sphere.jpg" alt="Digital Sphere">
     <header class = "header">
-        <h1>Online <br>Digital Playground</h1></li>
+        <div class="title">
+            <h1 style="color:red;">Online</h1><h1> Digital Playground</h1>
+        </div>
         <div class = "head_links">
         <li><a href="My-HTML-Refresh/index.html">My HTML Refresher</a></li>
         <li><a href="MyWebsite">My MyWebsite</a></li>

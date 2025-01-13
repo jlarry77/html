@@ -12,15 +12,22 @@ body {
     align-items: flex-start;
     width: 100%;
     max-width: 100%;
+    margin:0;
+    background-color: rgba(112, 128, 144, 0.50); /* Transparent slate gray */
+    z-index: 1;
+
+
 }
 
 .head_links {
     padding-right: 1%;
+
 }
 
-header, .head_links {
+header .head_links {
     display: flex;
     flex-direction: row;
+    z-index: 1;
 }
 
 .header li {
@@ -29,13 +36,21 @@ header, .head_links {
 
 
 }
-h1 {
+.title {
+    display: flex;
     color: white;
     position: relative;
-    z-index: 1;
-    font-size: 40px;
-    padding: 0px 30px 15px 15px;
+    z-index: 1000;
+    font-size: 1.2em;
+    padding: 10px 30px 15px 15px;
     font-weight: 100;
+    flex-direction: column;
+    margin: 0;
+    height: 10%;
+}
+
+.title, h1 {
+    margin: 0;
 }
 
 a:link, a:visited, a:active {
@@ -44,23 +59,21 @@ a:link, a:visited, a:active {
     padding-left: 20px;
     font-size: 20px;
     position:  relative;
-    z-index: 1;
+    z-index: 100;
     font-weight: 50;
 }
 
 img {
     position: absolute;
-
-
     z-index: 0;
-    height: 100%;
+    width: 100%;
     opacity: 75%;
     
 
 }
 
 a:hover {
-    color: lightslategray;
+    color: red;
     font-size: 20px;
     margin: 2px;
     padding-left: 20px;
