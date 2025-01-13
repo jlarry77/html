@@ -8,15 +8,21 @@
 </head>
 <body>
     <img src="/images/digital-sphere.jpg" alt="Digital Sphere">
-    <h1>Online <br>Digital Playground</h1></li>
-    <li><a href="My-HTML-Refresh/index.html">My HTML Refresher</a></li>
-    <li><a href="MyWebsite">My MyWebsite</a></li>
-    <li><a href="overage">overage</a></li>
-    <li><a href="php_exec">PHP Exec</a></li>
-    <li><a href="rbi">RBi-Realtors</a></li>
-    <br>
-    <li><a href="lo_page">Loan Officer Page</a></li>
-    <br>
-    <li><a href="login_template">Login Template</a></li>
+    <header class = "header">
+        <h1>Online <br>Digital Playground</h1></li>
+        <div class = "head_links">
+        <li><a href="My-HTML-Refresh/index.html">My HTML Refresher</a></li>
+        <li><a href="MyWebsite">My MyWebsite</a></li>
+        <li><a href="overage">overage</a></li>
+        <li><a href="php_exec">PHP Exec</a></li>
+        <li><a href="rbi">RBi-Realtors</a></li>
+
+        <li><a href="lo_page">Loan Officer Page</a></li>
+
+        <li><a href="login_template">Login Template</a></li>
+    </div>
+    </header>
+
+    
 </body>
 </html>
