@@ -31,7 +31,7 @@ require_once 'includes/login_view.inc.php';
     
     <!-- Form to submit user name and password -->
 
-    
+    <div class="main-container">
     <form class="login_form" action="includes/login.inc.php" method="POST">
         <h3>User Login</h3>
     
@@ -45,9 +45,11 @@ require_once 'includes/login_view.inc.php';
             <h3>Password <i>required</i></h3>
             <input type="password" name="user_pw" placeholder="Password">
         </div>
-        <br>
-        <button type="submit">Submit</button>
-        </form>
 
+        <div class="submit-button">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
 </body>
 </html>
