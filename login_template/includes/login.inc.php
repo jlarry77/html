@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         //  Check for empty input fields
         if (is_input_empty($username, $pwd)) {
-            $errors["empty_input"] = "Please fille in all fields.";
+            $errors["empty_input"] = "Pleas fille in all fields.";
     }
     // Fetch user information from the database
     $result = get_user($pdo, $username);
