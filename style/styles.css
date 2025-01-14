@@ -86,6 +86,7 @@ header .head_links2 {
 
 .title, h1 {
     margin: 0;
+    margin-left: 20px;
 }
 
 a:link, a:visited, a:active {
@@ -142,3 +143,77 @@ li {
     top: 0;
     left: 0;
   }
+
+  .main-content{
+    display: flex;
+    z-index: 1000;
+    color:  white;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .main-content li {
+    padding: 5px;
+    font-size: 1.2em;
+  }
+
+  .main-content span {
+    color: rgba(255,255,255,.50)
+  }
+
+  /* Moving Line across bottom of header */
+  .moving-line {
+    width: 300px; /* Width of the line */
+    height: 1px; /* Thickness of the line */
+    background-color: red; /* Line color */
+    position: relative;
+    /* animation: moveLine 30s ease-in-out 1; /* Single run animation */
+  }
+  
+  @keyframes moveLine {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    50% {
+      transform: translateX(1800px); /* Middle position */
+    }
+    100% {
+      transform: translateX(0); /* Return to start */
+    }
+  }
+  
+  /* Main Content Fade In */
+  .main-content > * {
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly shifted downward */
+    animation: fadeIn 1s ease-out forwards; /* Fade in animation */
+  }
+  
+  .main-content > h3 {
+    animation-delay: 0s; /* Fade in immediately */
+  }
+  
+  .main-content > ul:nth-child(2) {
+    animation-delay: 0.2s; /* Delay for the second element */
+  }
+  
+  .main-content > ul:nth-child(3) {
+    animation-delay: 0.4s; /* Delay for the third element */
+  }
+  
+  .main-content > ul:nth-child(4) {
+    animation-delay: 0.6s; /* And so on */
+  }
+  
+  /* Define the fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Slightly shifted downward */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in its original position */
+    }
+  }
+  

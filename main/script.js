@@ -83,7 +83,7 @@ function render() {
         ctx.beginPath();
         ctx.moveTo(x1, y1);
         ctx.lineTo(x2, y2);
-        ctx.strokeStyle = 'white';
+        ctx.strokeStyle = 'rgba(255,255,255,.25)';  // Change sphere Color
         ctx.lineWidth = 0.5;
         ctx.stroke();
       }
@@ -95,3 +95,12 @@ function render() {
 
 // Start rendering
 render();
+
+
+// Moving Line across bottom of header //
+
+
+//  window.onload = function () {
+//    document.querySelector('.moving-line').style.animation = 'moveLine 30s ease-in-out 1';
+//  };
+
