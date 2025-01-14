@@ -48,14 +48,14 @@ require_once 'includes/login_view.inc.php';
                 <input type="text" name="username" placeholder="User Name">
                 <input type="password" name="pwd" placeholder="Password">
                 <input type="text" name="email" placeholder="e-mail">
-                <button type="submit">Register</button> -->
+                <button type="submit">Register</button> 
             </form>
             <?php check_signup_errors(); ?>
-        </div>
+        </div>-->
+           <!-- Logout Section -->
+        <div class="logout">
         <h3>Logout</h3>
-        <!-- Logout Section -->
-        <div class="index-logout">
-          
+     
             <form action="includes/logout.inc.php" method="post">
                 <br>
                 <button>Logout</button>
