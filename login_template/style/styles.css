@@ -58,6 +58,13 @@
 .login_form h3 {
     margin-bottom: 10px;
     color: #ce2029; /* Red color for headings */
+    border-radius: 9px; /* Optional if you still want rounded corners */
+    background-color: transparent; /* Use no background */
+}
+
+
+.login_form .user, .password, .submit-button {
+    background-color: transparent;
 }
 
 /* Button styling */
