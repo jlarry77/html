@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 
     <title>Document</title>
 </head>
@@ -14,10 +14,14 @@
         <div class="title">
             <h1 style="color:red;">Online</h1><h1> Digital Playground</h1>
         </div>
-        <div class = "head_links">
+        <div class="sphere-wrapper">
+            <canvas id="sphereCanvas"></canvas>
+        </div>
 
-    </div>
     </header>
+
+ 
+    <script src="main/script.js"></script>
 
 </body>
 </html>

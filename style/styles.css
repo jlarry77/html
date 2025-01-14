@@ -9,7 +9,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 100%;
     margin:0;
@@ -20,10 +20,25 @@ body {
 
 }
 
-.head_links {
-    padding-right: 1%;
-
+.head-org {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:  75%;
 }
+
+.head_links {
+    display: flex; /* Keep the links in a row */
+    flex-direction: row; /* Ensure links are laid out horizontally */
+    flex-wrap: nowrap; /* Prevent links from wrapping to the next line */
+    justify-content: flex-start; /* Align links to the left */
+    align-items: center; /* Vertically align links */
+    width: 100%; /* Allow the container to adjust to the content width */
+    padding: 20px 20px; /* Add some padding for better spacing */
+    margin: 0; /* Remove unnecessary margins */
+}
+
+
 
 header .head_links {
     display: flex;
@@ -31,23 +46,42 @@ header .head_links {
     z-index: 1;
 }
 
-.header li {
-    padding: 60px 5px 0px 5px;
-    
-
-
+.head_links2 {
+    display: flex; /* Keep the links in a row */
+    flex-direction: row; /* Ensure links are laid out horizontally */
+    flex-wrap: nowrap; /* Prevent links from wrapping to the next line */
+    justify-content: flex-start; /* Align links to the left */
+    align-items: center; /* Vertically align links */
+    width: 100%; /* Allow the container to adjust to the content width */
+    padding: 20px 20px; /* Add some padding for better spacing */
+    margin: 0; /* Remove unnecessary margins */
 }
+
+
+
+header .head_links2 {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.header li {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+
 .title {
     display: flex;
+    flex-direction: column;
     color: white;
     position: relative;
     z-index: 1000;
     font-size: 1.2em;
-    padding: 10px 30px 15px 15px;
+    padding: 0px;
     font-weight: 100;
-    flex-direction: column;
-    margin: 0;
-    height: 10%;
 }
 
 .title, h1 {
@@ -58,7 +92,7 @@ a:link, a:visited, a:active {
     color: white;
     text-decoration: none;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: .8em;
     position:  relative;
     z-index: 100;
     font-weight: 50;
@@ -75,7 +109,7 @@ img {
 
 a:hover {
     color: red;
-    font-size: 20px;
+    font-size: .8em;
     margin: 2px;
     padding-left: 20px;
     font-weight: 50;
@@ -83,5 +117,28 @@ a:hover {
 
 li {
     list-style-type: none;
+    font-size: .8em;
+    width: 50%;
 }
 
+/* Sphere wrapper styles */
+.sphere-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Set the width of the sphere container */
+    height: 150px; /* Set the height of the sphere container */
+    overflow: hidden; /* Prevent overflow */
+    z-index: 1000;
+    margin-left: auto;
+  }
+  
+  /* Canvas styles */
+  #sphereCanvas {
+    position: absolute;
+    width: 150px; /* Adjust size of the canvas */
+    height: 150px;
+    top: 0;
+    left: 0;
+  }
