@@ -1,0 +1,137 @@
+body {
+    margin:0;
+    background-color: #c4c4c4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-logo img{
+    height: 150px;
+    width: auto;
+}
+
+.header-title span {
+    color: orange;
+}
+.header-box {
+    background-color: #555555;
+    color: #ffffff;
+    display:  flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    height: 150px;
+}
+
+.header-title{
+    background-color: #555555;
+    display: flex;
+    padding: 1em;
+}
+
+.navigation {
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+}
+
+.header-links ul{
+    display: flex;
+    background-color: orange;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    width: 95%;
+    padding: 20px;
+    margin: 0;
+    color: #FFF9EB;
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.header-links li {
+    padding-right: 2.5em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+.main-left-cont {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 350px;
+    background-color: #F5F4ED;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 7px;
+
+}
+
+.main-right-cont {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 350px;
+    background-color: #F5F4ED;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    height: 300px;
+
+}
+
+.secondary-content .top-row {
+    height: 30%;
+    width: 80%;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+    margin: 10px;
+}
+
+.secondary-content .bottom-row {
+    height: 30%;
+    width: 80%;
+    background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+footer .footer-links {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.foot-img img{
+    display: flex;
+    height: 150px;
+    width: auto;
+    justify-content: flex-end;
+    
+}

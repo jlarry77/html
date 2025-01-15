@@ -14,13 +14,18 @@
         <div class="title">
             <h1 style="color:#ffd700;">Online</h1><h1> Digital Playground</h1>
         </div>
+        <div class = "head-links">
+            <ul>
+                <li><a href="main.php">Main</a></li>
+            </ul>
+        </div>
         <div class="sphere-wrapper">
             <canvas id="sphereCanvas"></canvas>
         </div>
 
     </header>
 
- 
+    
     <script src="main/script.js"></script>
 
 </body>
