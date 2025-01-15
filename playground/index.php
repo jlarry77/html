@@ -12,7 +12,7 @@
 <img src="/images/digital-sphere.jpg" alt="Digital Sphere">
     <header class = "header">
         <div class="title">
-            <h1 style="color:red;">Online</h1><h1> Digital Playground</h1>
+            <h1 style="color:#ffd700;">Online</h1><h1> Digital Playground</h1>
         </div>
         <div class="sphere-wrapper">
             <canvas id="sphereCanvas"></canvas>

@@ -35,9 +35,10 @@
 
 
     </header>
-
-    <div class="moving-line"></div>
-    <div class="static-line"></div>
+    <div class = "header-line">
+        <div class="moving-line"></div>
+        <div class="static-line"></div>
+    </div>
     <div class="main-content">
         <h3>Contents</h3>
         <ul>
