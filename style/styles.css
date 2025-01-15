@@ -13,7 +13,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin:0;
-    background-color: rgba(112, 128, 144, 0.50); /* Transparent slate gray */
+    background-color: rgba(112, 128, 144, .5); /* Transparent slate gray */
     z-index: 1;
     
 
@@ -144,21 +144,34 @@ li {
     left: 0;
   }
 
-  .main-content{
+.main-content{
     display: flex;
     z-index: 1000;
     color:  white;
     flex-direction: column;
     position: relative;
+    background-color: rgba(0,0,0, 0.65); /* Transparent slate gray */
+    border-style: solid;
+    border-width: .5px;
+    border-color: rgba(112, 128, 144, .25);
+    border-radius: 9px;
+    width: 40%;
+    margin: 20px;
+
   }
 
   .main-content li {
     padding: 5px;
     font-size: 1.2em;
+    width: 100%;
   }
 
   .main-content span {
-    color: rgba(255,255,255,.50)
+    color: rgba(255,255,255,.75)
+  }
+
+  .main-content h3 {
+    padding: 20px 0px 0px 20px;
   }
 
   /* Moving Line across bottom of header */
@@ -170,7 +183,15 @@ li {
     /* animation: moveLine 30s ease-in-out 1; /* Single run animation */
   }
   
-  @keyframes moveLine {
+  .static-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(112, 128, 144, .25);
+    position: relative;
+  }
+
+  /* Animation for red line to move side to side once at page open */
+   @keyframes moveLine {
     0% {
       transform: translateX(0); /* Start position */
     }
@@ -180,7 +201,7 @@ li {
     100% {
       transform: translateX(0); /* Return to start */
     }
-  }
+  } 
   
   /* Main Content Fade In */
   .main-content > * {

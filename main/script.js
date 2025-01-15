@@ -99,7 +99,6 @@ render();
 
 // Moving Line across bottom of header //
 
-
 //  window.onload = function () {
 //    document.querySelector('.moving-line').style.animation = 'moveLine 30s ease-in-out 1';
 //  };
