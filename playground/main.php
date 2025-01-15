@@ -29,6 +29,9 @@
     <div class="main-content">
         <div class="main-left-cont">
             <p>Some Content</p>
+
+
+
         </div>
         <div class = "main-right-cont">
             <p>A little different content</p>
@@ -38,7 +41,15 @@
     <div class = "secondary-content">
         <div class = "top-row">
 
+        <div class="left-sub-cont">
         </div>
+        <div class="middle-sub-cont">
+
+        </div>
+        <div class="right-sub-cont">
+        </div>
+
+    </div>
         <div class="bottom-row">
 
         </div>

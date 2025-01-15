@@ -88,24 +88,60 @@ body {
     border-radius: 10px;
     align-items: center;
     padding: 20px;
-    height: 300px;
+    height: 600px;
 
 }
 
 .secondary-content .top-row {
-    height: 30%;
+    display: flex;
+    height: 40%;
     width: 80%;
+    flex-direction: row;
     background-color: black;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255);
     margin: 10px;
+    justify-content: center;
 }
 
 .secondary-content .bottom-row {
-    height: 30%;
+    height: 40%;
     width: 80%;
     background-color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.secondary-content .top-row .left-sub-cont {
+    display: flex;
+    height: 80%;
+    width: 30%;
+    background-color: gray;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.secondary-content .top-row .middle-sub-cont {
+    display: flex;
+    height: 80%;
+    width: 30%;
+    background-color: gray;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255);
+}
+
+.secondary-content .top-row .right-sub-cont {
+    display: flex;
+    height: 80%;
+    width: 30%;
+    background-color: gray;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
