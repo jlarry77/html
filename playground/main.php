@@ -42,11 +42,13 @@
         <div class = "top-row">
 
         <div class="left-sub-cont">
+            <img src="../images/nbc_01.jpg" alt="nbc">
         </div>
         <div class="middle-sub-cont">
-
+        <img src="../images/nbc_02.jpg" alt="nbc">
         </div>
         <div class="right-sub-cont">
+            <img src="../images/nbc_03.jpg" alt="nbc">
         </div>
 
     </div>

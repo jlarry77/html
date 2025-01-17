@@ -148,6 +148,15 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255);
 }
 
+
+.secondary-content .top-row img {
+    height: 180px;
+    width: auto;
+    margin-left: 20%;
+    border-radius: 8px;
+
+}
+
 footer {
     display: flex;
     background-color: black;

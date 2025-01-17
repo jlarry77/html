@@ -40,6 +40,7 @@
         <div class="static-line"></div>
     </div>
     <div class="main-content">
+        <div class = "contents">
         <h3>Contents</h3>
         <ul>
             <li>My HTML Refresher:  <span>Testing Website to Refresh HTML/CSS Knowledge</span></li>
@@ -53,8 +54,11 @@
             <li>TBD:  <span>Future Project</span></li>
             <li>TBD2: <span>Future Project</span></li>
             </ul>
-    </div>
+    </div> 
+    <div class = "right-container">
 
+    </div>
+    </div>
     <script src="main/script.js"></script>
 </body>
 </html>
