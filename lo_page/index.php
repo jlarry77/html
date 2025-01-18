@@ -18,47 +18,52 @@
         <a href="about.php">About Me</a>
         <a href="https://strongfg.my1003app.com/1628121/register?time=1734451522547" target="_blank" rel="noopener noreferrer">Loan Application</a>
     </nav>
+
 </header>
+<div class="spacer"></div>
 
 <body>
 
 <div class="main-body">
     
-    <div class="first-container">
+    <div class="hero-container">
         <h2>Let's Find Your Dream Home Together!</h2>
         <img src="images/peaks_blue_lake.jpg" alt="Downtown Denver at Sunset" height="auto" width="100%">
     </div>
-
-    <div class="second-container">
-        <h3>HAPPINESS</h3>
+    <div class="spacer"></div>
+    <div class="happiness-container">
+        <div class = "happy-text">
+        <h3>What We Do</h3>
         <p>I help Colorado residents obtain residential mortgages that best suit their needs.  Buying a home or refinancing can be an intimidating process, my goal is to take the stress out of the transaction.  I strive to make every loan as transparent and approachable as possible for every buyer.</p>
+        </div>
     </div>    
-    
-    <div class="third-container">
+ 
+    <div class="why-container">
   
-        <div class="text">
+        <div class="why-text">
             <h3>WHY ME?</h3>
             <p>I work with a variety of Wholesale Lenders who offer a wide range of loan programs.  Additionally, this gives me the ability to price rates with each of them and select the best mortgage rate for my borrowers!</p>
         </div>
         <img src="images/dancers_convention_center.jpg" alt="Dancers at Denver Convention Center" height="auto" width="auto">
     </div>
 
-    <div class="fourth-container">
+    <div class="about-container">
           <img src="images/green_mtn.jpg" alt="Green Mountain" height="auto" width="auto">
-        <div class="text">
+        <div class="about-text">
             <h3>ABOUT US</h3>
             <p>I work for Strong Financial Group, Inc., a Colorado company that has been serving Colorado residents for over 20 years.  While I will be your point of contact throughout every transaction, I have an amazing, experienced team that I work with to ensure that you're taken care of every step of the way.</p>
         </div>
       
     </div>
     
-    <div class="fifth-container">
-    <div class="contact-info">
-        <h2>LET'S GET TO KNOW EACH OTHER:</h2>
+    <div class="submission-container">
+        <div class="contact-info">
+            <h2>LET'S GET TO KNOW EACH OTHER:</h2>
     
             <p><a href="mailto:justyn@strongfinancialgroupinc.com">justyn@strongfinancialgroupinc.com</a></p>
             <p>Direct: 303.330.1984</p>
         </div>
+        
         <div class="submission-form">
             <form action="includes/send_email.php" method="POST">
                 <input type="text" name="fname" placeholder="First Name">

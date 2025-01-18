@@ -22,8 +22,9 @@
     </nav>
 
 </header>
+<div class="spacer"></div>
 <body>
-    <div class="about-container">
+    <div class="about-me-container">
     <div class="text">
     <h3>ABOUT ME</h3>
     <p>I've been working in the residential mortgage industry as a Loan Originator since 2018 in Colorado.  I work with first-time home-buyers, investors, current homeowners, and anyone who has questions about the mortgage industry.  Whether you're buying your home, or refinancing, I'm here to walk you through the process and find the best mortgage product to suit your needs and financial goals.
