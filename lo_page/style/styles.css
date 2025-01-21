@@ -31,7 +31,8 @@ a:hover {
 
 }
 
-/* Header */
+
+/* Header - Same formatting across all pages*/
 header {
     width: 100%;
     background: #000;
@@ -72,16 +73,12 @@ nav a {
     height: 2em;
     background-color: white;
     width: 100%;
-
-
 }
 
+
 /* Fomatting for Main Picture and overlying text */
-
-
 .main-body {
     width: 100%;
-
 }
 
 .hero-container img {
@@ -96,7 +93,6 @@ nav a {
     position:relative;
     text-align: center;
     height: 535px;
-
     background-color: #000;
 }
 
@@ -107,7 +103,6 @@ nav a {
     background-color: rgba(0,0,0, .45);
     border-radius: 8px;
     width: 35%;
-    
 }
 
 .main-body .hero-container h2 {
@@ -117,10 +112,10 @@ nav a {
     transform: translate(-50%, -50%);
     font-size: 3.44em;
     font-weight: lighter;
-
 }
 
-/* Happiness and text formatting */
+
+/* Services Offered and accompanying text formatting */
 .main-body .happiness-container {
     display: flex;
     flex-direction: column;
@@ -154,15 +149,15 @@ nav a {
     padding: 0;
 }
 
-
 .happiness-container p {
     display: flex;
     text-align: center;
     width:75%;
-
 }
-/* Main Content section - Index.php:'hero Me?' */
 
+
+
+/* Index.php - Main Content Section - 'Why Me' Text and Picture */
 .why-container {
     display:  flex;
     flex-direction: row;
@@ -171,9 +166,7 @@ nav a {
     text-align: left;
     height:  400px;
     width: 100%;
-    
 }
-
 
 .why-container .why-text {
     background-color: #404040;
@@ -187,7 +180,6 @@ nav a {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0,0,0);
-
 }
 
 .why-text p, h3{
@@ -201,11 +193,10 @@ nav a {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0,0,0);
-
 }
 
-/* Main Contetent Section - Index:'About Us' */
 
+/* Index.php - Main Content Section - Index:'About Us' and Picture */
 .about-container {
     display:  flex;
     flex-direction: row;
@@ -214,9 +205,7 @@ nav a {
     text-align: left;
     height:  400px;
     width: 100%;
-    
 }
-
 
 .about-container .about-text {
     background-color: #404040;
@@ -230,7 +219,6 @@ nav a {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0,0,0);
-
 }
 
 .about-text p, h3{
@@ -244,11 +232,10 @@ nav a {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0,0,0);
-
-
 }
 
-/* Main Contact Section - Index/Contact:'Submission Form Section' */
+
+/* Index.php - Main Contact Section - Index/Contact:'Submission Form Section' */
 .submission-container {
     background-color: #404040;
     font-weight: lighter;
@@ -285,11 +272,9 @@ nav a {
     border: none;
     border-radius: 3px;
     justify-content: center;
-
 }
 
 .submission-form button {
-   
     background-color: #282829;
     color: #fff;
     padding: 10px 20px;
@@ -307,21 +292,20 @@ nav a {
     font-weight: lighter;
     align-items: center;
     margin: 0;
-
 }
 
 .submission-container .contact-info p {
     display: flex;
     padding: 0;
     margin: 0;
-
 }
 
 .submission-container img {
     margin: 0px;
 }
 
-/* Conact.php Formatting */
+
+/* Conact.php -  Main Container - Formatting */
 .contact-container {
     background-color: #404040;
     font-weight: lighter;
@@ -329,7 +313,6 @@ nav a {
     justify-content: center;
     height: 400px;
     border-top:#ffffff 1px solid;
-
 }
 
 .contact-container .contact-text .submission-form .contact-photo {
@@ -353,11 +336,9 @@ nav a {
     border: none;
     border-radius: 3px;
     justify-content: center;
-
 }
 
 .submission-form button {
-   
     background-color: #282829;
     color: #fff;
     padding: 10px 20px;
@@ -375,7 +356,6 @@ nav a {
 }
  
 .contact-container img {
-
     padding: 0px;
 }
 
@@ -384,7 +364,7 @@ button:hover {
 }
 
 
-/* About Me */
+/* About.php Main Container Formatting*/
 .about-me-container {
     background-color: #404040;
     font-weight: lighter;
@@ -392,11 +372,7 @@ button:hover {
     display:  flex;
     border-bottom:#000 1px solid;
     height:  600px;
-
-
-
 }
-
 
 .about-me-container .text h3 {
     font-weight: lighter;
@@ -408,7 +384,6 @@ button:hover {
     flex: 33.33%;
     padding: 5px;
     justify-content: center;
-     
 }
 
 .about-me-container .text {
@@ -418,9 +393,6 @@ button:hover {
     border: none;
     justify-content: center;
     font-size: 1em;
-
-    
-
 }
 
 .about-me-container img {
@@ -428,7 +400,7 @@ button:hover {
 }
 
 
-/* Footer */
+/* Footer Formatting - All Pages */
 footer {
     display: flex;
     justify-content: space-between;
@@ -448,7 +420,6 @@ footer .footer-left,
 footer .footer-right {
     display: flex;
     justify-content: center;
-
 }
 
 .footer-contact li {
@@ -465,8 +436,6 @@ footer .footer-right {
     text-align: left;
 }
 
-
-
 footer a {
     display: flex;
     color: #fff;
@@ -480,6 +449,8 @@ footer a:hover {
     color: #AAAAAA;
 }
 
+/* Responsive Adjustments */
+
 @media (max-width: 1024px) {
     .main-body .hero-container h2 {
         font-size: 2em;
@@ -492,7 +463,6 @@ footer a:hover {
         }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 920px) {
     .main-body {
         width: 95%;
@@ -544,20 +514,18 @@ footer a:hover {
 
     header nav {
         font-size: .75em;
-     
     }
 
 
     .main-body .hero-container { 
-    max-width: 100%;
-    height: auto;
-    justify-content: space-around;
-    border: none;
+        max-width: 100%;
+        height: auto;
+        justify-content: space-around;
+        border: none;
     }
 
     .main-body .hero-container h2 {
         font-size: 1em;
-
     }
 
     .happiness-container {
@@ -671,8 +639,6 @@ footer a:hover {
     .contact-container .contact-text {
         padding: 20px 10px 0px 10px;
     }
-    
-
 
     footer {
         width: 100%;
@@ -727,15 +693,14 @@ footer a:hover {
         font-size: .5em;
         flex-wrap: wrap;
         padding: 5px;
-     
     }
 
 
     .main-body .hero-container { 
-    max-width: 100%;
-    height: auto;
-    justify-content: space-around;
-    border: none;
+        max-width: 100%;
+        height: auto;
+        justify-content: space-around;
+        border: none;
     }
 
     .main-body .hero-container h2 {
