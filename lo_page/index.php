@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Metadata for the page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styles.css">
@@ -8,11 +9,15 @@
 </head>
 
 <header>
-    <a href="index.php"><h1>Justyn Larry<br>
-    Mortgage Loan Originator<br>
-    Strong Financial Group
-    </h1></a>
+    <!-- Header containing the main title and navigation links -->
+        <a href="index.php"><h1>Justyn Larry<br>
+        Mortgage Loan Originator<br>
+        Strong Financial Group
+        </h1></a>
+        
     <nav class="header-nav">
+        <!-- Navigation links for the website -->
+
         <a href="index.php">Home</a>
         <a href="contact.php">Contact</a>
         <a href="about.php">About Me</a>
@@ -20,17 +25,20 @@
     </nav>
 
 </header>
+
 <div class="spacer"></div>
 
 <body>
 
 <div class="main-body">
-    
+    <!-- Hero section with a prominent image and call-to-action text -->
     <div class="hero-container">
         <h2>Let's Find Your Dream Home Together!</h2>
         <img src="images/peaks_blue_lake.jpg" alt="Downtown Denver at Sunset" height="auto" width="100%">
     </div>
     <div class="spacer"></div>
+
+    <!-- Section describing services offered -->
     <div class="happiness-container">
         <div class = "happy-text">
         <h3>What We Do</h3>
@@ -39,7 +47,7 @@
     </div>    
  
     <div class="why-container">
-  
+    <!-- Section explaining services offered -->
         <div class="why-text">
             <h3>WHY ME?</h3>
             <p>I work with a variety of Wholesale Lenders who offer a wide range of loan programs.  Additionally, this gives me the ability to price rates with each of them and select the best mortgage rate for my borrowers!</p>
@@ -48,6 +56,8 @@
     </div>
 
     <div class="about-container">
+    <!-- About section with describing Strong Financial Group -->
+
           <img src="images/green_mtn.jpg" alt="Green Mountain" height="auto" width="auto">
         <div class="about-text">
             <h3>ABOUT US</h3>
@@ -57,6 +67,7 @@
     </div>
     
     <div class="submission-container">
+    <!-- Contact and submission form section -->
         <div class="contact-info">
             <h2>LET'S GET TO KNOW EACH OTHER:</h2>
     
@@ -65,6 +76,7 @@
         </div>
         
         <div class="submission-form">
+        <!-- Contact form for user submissions -->
             <form action="includes/send_email.php" method="POST">
                 <input type="text" name="fname" placeholder="First Name">
                 <input type="text" name="lname" placeholder="Last Name">
@@ -85,6 +97,7 @@
 </body>
 
 <footer>
+    <!-- Footer with contact information and additional links -->
     <img src="images/jml_logo.png" alt="Justyn Larry Mortgage Broker Logo" height="100px" width="auto">
     <div class="footer-contact">
         <h5>JUSTYN LARRY</h5>
@@ -94,7 +107,7 @@
         <li>Greenwood Village, CO 80111</li>
         <li>Strong Financial NMLS #407274</li>
     </div>
-
+    <!-- Navigation for website -->
     <div class="footer-links">
         <li><a href="/index.php">Home</a></li>
         <li><a href="contact.php">Contact</a></li>
