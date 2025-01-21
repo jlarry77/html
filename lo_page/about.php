@@ -25,15 +25,15 @@
 <div class="spacer"></div>
 <body>
     <div class="about-me-container">
-    <div class="text">
-    <h3>ABOUT ME</h3>
-    <p>I've been working in the residential mortgage industry as a Loan Originator since 2018 in Colorado.  I work with first-time home-buyers, investors, current homeowners, and anyone who has questions about the mortgage industry.  Whether you're buying your home, or refinancing, I'm here to walk you through the process and find the best mortgage product to suit your needs and financial goals.
-        <br>Strong Financial Group, Inc. has been in business serving Coloradans for over 20 years.  We work with Wholesale Mortgage Lenders to help you find the best program and rate available, which also means that we're not tied to one specific lender.  What does that mean for you?  <i><b>OPTIONS!</b></i>  By shopping rates between lenders, we can tailor each loan to the borrower's unique needs.  I understand that everyone's situation is unique, and will tailor the process to you.
-        <br>I entered this professoin because it affords me the opportunity to help people find a home or improve their home or financial situation.  I work directly with each borrower through the entire process, and if I'm awake, I'm available for any questions you may have, because I want the tnire loan process to be transparent and easily understood.
-        <br>I've lived in Denver for over 20 years, with a brief two-year hiatus in Los Angeles, and I love everything the city and state have to offer, including hiking, snowboarding, and taking in the beauty of the state through photography.
-    </p>
-</div>
-    <img src="images/jml_bench.jpg" alt="Justyn on coffee shop bench" height=auto width=auto>
+        <div class="text">
+            
+            <p><span>ABOUT ME</span><br>I've been working in the residential mortgage industry as a Loan Originator since 2018 in Colorado.  I work with first-time home-buyers, investors, current homeowners, and anyone who has questions about the mortgage industry.  Whether you're buying your home, or refinancing, I'm here to walk you through the process and find the best mortgage product to suit your needs and financial goals.
+                <br>Strong Financial Group, Inc. has been in business serving Coloradans for over 20 years.  We work with Wholesale Mortgage Lenders to help you find the best program and rate available, which also means that we're not tied to one specific lender.  What does that mean for you?  <i><b>OPTIONS!</b></i>  By shopping rates between lenders, we can tailor each loan to the borrower's unique needs.  I understand that everyone's situation is unique, and will tailor the process to you.
+                <br>I entered this professoin because it affords me the opportunity to help people find a home or improve their home or financial situation.  I work directly with each borrower through the entire process, and if I'm awake, I'm available for any questions you may have, because I want the tnire loan process to be transparent and easily understood.
+                <br>I've lived in Denver for over 20 years, with a brief two-year hiatus in Los Angeles, and I love everything the city and state have to offer, including hiking, snowboarding, and taking in the beauty of the state through photography.
+            </p>
+        </div>
+        <img src="images/jml_bench.jpg" alt="Justyn on coffee shop bench" height=auto width=auto>
     </div>
 </body>
 <footer>

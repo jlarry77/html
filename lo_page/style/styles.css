@@ -370,31 +370,32 @@ button:hover {
     display:  flex;
     border-bottom:#000 1px solid;
     height:  600px;
+    width: 100%;
+    flex-direction: row;
 }
 
-.about-me-container .text h3 {
-    font-weight: lighter;
-    flex: 70%;
-    margin: auto;
+.about-me-container div {
+    display: flex;
 }
 
-.about-me-container .text img  {
-    flex: 33.33%;
-    padding: 5px;
-    justify-content: center;
+.about-me-container span {
+    font-size: 1.2em;
+    margin: 15px;
+}
+.about-me-container .text p {
+    width: 100%;
+    height: auto;
+    padding: 0px 50px 25px 50px;
+
 }
 
-.about-me-container .text {
-    margin: 0;
-    width: 80%;
-    padding: 3%;
-    border: none;
-    justify-content: center;
-    font-size: 1em;
-}
+
 
 .about-me-container img {
     border-left:#000 1px solid;
+    display: flex;
+    width: auto;
+    height: 600px;
 }
 
 
@@ -462,6 +463,9 @@ footer a:hover {
 }
 
 @media (max-width: 920px) {
+
+
+    /* Main Body Adjustments*/
     .main-body {
         width: 100%;
         justify-content: center;
@@ -473,31 +477,120 @@ footer a:hover {
         height: 152px;
     }
 
+    .main-body .hero-container img {
+        max-height: 152px;
+    }
     .main-body img {
         display: flex;
         justify-content: center;
     }
 
-    .main-body .happiness-container {
-        height: 150px;
-    }
+
+
+    /* Index.php - Hero Container Adjustments */
     .hero-container h2 {
         font-size:  3em;
     }
 
+    
+    /* Index.php - Goals  Section */
+    .happiness-container {
+        font-size: .8em;
+        text-align: center;
+        height: auto;
+        width: 85%;
+    }
+    
+    .happiness-container h3 {
+        font-size: 1em;
+    }
+
+
+    /* Index.php - Services Offered */
+     .why-container {
+        width: 95%;
+        font-size: .8em;
+        margin-left: 25px;
+    }
+
+    .why-container .why-text {
+        width:  45%;
+    }
+
+   .why-container img {
+        width: 55%;
+    }
+
+
+    /* Index.php - About Strong Financial Group*/
+    .about-container {
+        width: 95%;
+        font-size: .6em;
+        padding-left: 20px;
+    }
+    .about-container .text {
+        width:  45%;
+        height: auto;
+    }
+    .about-container img {
+        width: 55%;
+        height: auto;
+    }
+
+    /* Index.php - About Container Adjustments */
     .about-container .about-text {
         font-size: .9em;
     }
 
-    .submission-container .text{
-        font-size: .8em;
-        margin-left: .5%;
-        margin-right: .5%;
-        padding: 5%;
+
+    /* Index.php - Submission Container Adjustments */
+    .submission-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .submission-container .contact-info{
+        font-size: .6em;
+        width: 75%;
+        }
+
+    .submission-form {
+        display: flex;
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+    .submission-form form input {
+        width: 90%;
+    }
+    .submission-container .photo-container {
+        width: 75%;
+        height: auto;
+        justify-content: flex-end;
     }
 
+    .about-me-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
 
+    .about-me-container img {
+        width: auto;
+        height: 600px;
+        align-items: center;
+    }
 
+    .about-me-container .text {
+        width: 95%;
+        height: auto;
+        font-size: .7em;
+    }
 }
 /* Responsive Adjustments - Ipad Version */
 @media (max-width: 820px) {
@@ -507,6 +600,8 @@ footer a:hover {
         justify-content: center;
     }
 
+
+    /* Header Adjustments - Same across all pages*/
     header {
         display: flex;
         height: 75%
@@ -521,6 +616,7 @@ footer a:hover {
     }
 
 
+    /* Index.php - Hero Container Adjustments*/
     .main-body .hero-container { 
         max-width: 100%;
         height: 152px;
@@ -532,6 +628,8 @@ footer a:hover {
         font-size: 1em;
     }
 
+
+    /* Index.php - Goals  Section */
     .happiness-container {
         font-size: .8em;
         text-align: center;
@@ -540,7 +638,19 @@ footer a:hover {
     .happiness-container h3 {
         font-size: 1em;
     }
+    
+    .happiness-container .happy-text {
+        width: 100%;
+        text-align: center;
+    }
+        
+    .happiness-container img {
+        display: flex;
+        flex-wrap: wrap;
+    } 
 
+
+    /* Index.php - Services Offered */
      .why-container {
         width: 95%;
         font-size: .8em;
@@ -555,6 +665,8 @@ footer a:hover {
         width: 55%;
     }
 
+
+    /* Index.php - About Strong Financial Group*/
     .about-container {
         width: 95%;
         font-size: .7em;
@@ -569,6 +681,8 @@ footer a:hover {
         height: auto;
     }
 
+
+    /* Index.php - Submission Form*/
     .submission-container {
         width: 99%;
         height: auto;
@@ -588,7 +702,7 @@ footer a:hover {
     .submission-container img {
         display: none;
     }
-
+   
     .submission-container .contact-info {
         padding-bottom: 0px;
         padding-top: 20px 0px 0px 20px;
@@ -601,35 +715,58 @@ footer a:hover {
     }
 
 
-    .happiness-container .text {
-        width: 100%;
-        text-align: center;
-    }
-        
-    .happiness-container img {
-        display: flex;
-        flex-wrap: wrap;
-    } 
-
+     /* Contact.php - 'Get in Touch' Section */
     .contact-container {
         width: 100%;
         height: auto;
         display:  flex;
         align-items: center;
-
     }
 
-    .contact-container .text {
+    .contact-container .contact-text {
         font-size: .8em;
+        width: 75%;
+        padding: 10px;
     }
     
     .contact-container .submission-form {
         background-color: #404040;
         display: flex;
+        width: 95%;
     }
 
     .contact-container img {
         display: none;
+    }
+
+    .contact-container img {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 7px;
+        padding: 20px 0;
+    }
+
+
+     /* About.php*/
+    .about-me-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-me-container img {
+        width: auto;
+        height: 600px;
+        align-items: center;
+    }
+
+    .about-me-container .text {
+        width: 95%;
+        height: auto;
+        font-size: .8em;
     }
 
 
@@ -691,7 +828,7 @@ footer a:hover {
         padding: 5px;
     }
 
-
+     /* Index.php */
     .main-body .hero-container { 
         max-width: 100%;
         height: 122px;
@@ -701,10 +838,7 @@ footer a:hover {
 
     .main-body .hero-container h2 {
         font-size: 1em;
-
     }
-
-
 
     .main-body .happiness-container {
         font-size: .5em;
@@ -713,6 +847,15 @@ footer a:hover {
         padding-bottom: 10px;
     }
     
+    .happiness-container .happy-text {
+        width: 100%;
+        text-align: center;
+    }
+        
+    .happiness-container img {
+        display: none;
+    } 
+
     .happiness-container h3 {
         font-size: .4em;
     }
@@ -727,7 +870,6 @@ footer a:hover {
         height: auto;
         font-size: .8em;
         margin: 0;
-
     }
 
     .why-container .why-text {
@@ -735,13 +877,11 @@ footer a:hover {
         height: auto;
         padding: 20px;
         margin:0;
-        
-    }
+            }
 
    .why-container img {
         width: 95%;
         height: auto;
-
     }
 
     .about-container {
@@ -810,15 +950,7 @@ footer a:hover {
     }
 
 
-    .happiness-container .text {
-        width: 100%;
-        text-align: center;
-    }
-        
-    .happiness-container img {
-        display: none;
-    } 
-
+    /* Contact.php */
     .contact-container {
         width: 100%;
         height: auto;
@@ -826,13 +958,11 @@ footer a:hover {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-
     }
 
     .contact-container .contact-text {
         font-size: .8em;
         width: 80%;
-        
     }
     
     .contact-container .submission-form {
@@ -840,7 +970,6 @@ footer a:hover {
         display: flex;
         width: 100%;
         padding: 0px;
-
     }
 
     .contact-container img {
@@ -851,6 +980,27 @@ footer a:hover {
     }
 
 
+    /* About.php */
+    .about-me-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-me-container img {
+        width: 95%;
+        height: auto;
+        align-items: center;
+    }
+
+    .about-me-container .text {
+        width: 95%;
+        height: auto;
+        font-size: .8em;
+    }
 
     footer {
         width: 100%;

@@ -38,7 +38,7 @@
     </div>
     <div class="spacer"></div>
 
-    <!-- Section describing services offered -->
+    <!-- Section describing goals -->
     <div class="happiness-container">
         <div class = "happy-text">
         <h3>What We Do</h3>
