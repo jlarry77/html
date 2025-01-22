@@ -1,3 +1,11 @@
+
+<?php
+    require_once 'includes/dbh.inc.php';
+    require_once 'includes/signup_view.inc.php';
+    require_once 'includes/login_view.inc.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

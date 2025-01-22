@@ -1,6 +1,5 @@
 <?php
-    require_once 'includes/config_session.php';
-    require_once 'includes/login_view.inc.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -17,9 +16,7 @@
     <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
         <nav class="nav-section">
-            <form action="includes/login.inc.php">
-                <button class="admin-login" type="submit">Login</button>
-            </form>    
+            <a href="login.php">Log In</a>
             <form action="includes/logout.inc.php">
                 <button class="admin-logout" type="submit">Log Out</button>
             </form>
