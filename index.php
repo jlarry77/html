@@ -24,7 +24,7 @@
                 <li><a href="lo_page">Loan Officer Page</a></li>
                 <li><a href="login_template">Login Template</a></li>
                 <li><a href="playground/">Playground!</a></li>
-                <li><a href="***TBD***">::TBD::</a></li>
+                <li><a href="blog">Blog</a></li>
                 <li><a href="***TBD***">::TBD2::</a></li>
             </div>
        
@@ -51,7 +51,7 @@
             <li>Loan Officer Page:  <span>Development files for Loan Officer Web Page</span></li>
             <li>Login Template:  <span>Template to use for PHP login system</span></li>
             <li>Playground!  <span>Testing Area</span></li>
-            <li>TBD:  <span>Future Project</span></li>
+            <li>Blog  <span>Blog to track learning process</span></li>
             <li>TBD2: <span>Future Project</span></li>
             </ul>
     </div> 
