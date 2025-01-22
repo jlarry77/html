@@ -3,7 +3,7 @@
 
 //  Database Connection File //
 
-$dsn = "mysql:host=100.107.139.13; dbname= TBD ";
+$dsn = "mysql:host=100.107.139.13; dbname=prgm_blog";
 
 $dbusername = "root";
 $dbpassword = "Anchor77Crown";
