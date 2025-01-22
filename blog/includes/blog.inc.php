@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errors = [];
 
         // Validate if all input fields are filled
-        if (is_input_empty($title, $blog_post)) {
+        if (is_post_empty($title, $blog_post)) {
             $errors["empty_input"] = "Please fill in all fields.";
         }
 
