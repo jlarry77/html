@@ -47,10 +47,10 @@ function regenerate_session_id_loggedin(){
     $sessionId = $newSessionId . "_" . $userId;
     session_id($sessionId);
 
-    $_SESSION["last_reneration"] = time();  // time = function, checks last time session id was updated
+    $_SESSION["last_regeneration"] = time();  // time = function, checks last time session id was updated
 }
 
 function regenerate_session_id(){
     session_regenerate_id(true);
-    $_SESSION["last_reneration"] = time();  // time = function, checks last time session id was updated
+    $_SESSION["last_regeneration"] = time();  // time = function, checks last time session id was updated
 }

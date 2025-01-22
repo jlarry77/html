@@ -1,5 +1,6 @@
 <?php
-
+    require_once 'includes/config_session.php';
+    require_once 'includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +29,9 @@
     <!-- Main Content / Blog Posts -->
 
     <div class="main-content">
-        <?php ?>
+        <?php 
+                require_once 'includes/blog_model.inc.php';
+        ?>
     </div>
     
 

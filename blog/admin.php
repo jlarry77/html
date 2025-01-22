@@ -13,7 +13,7 @@
         <h3>Blog Content Creation</h3>
         <form action="includes/blog.inc.php" method="POST">
             <input type="text" name="title" placeholder="Post Title">
-            <input type="text" name="blog-content" placeholder="Blog Content">
+            <textarea name="blog-content" placeholder="Blog Content"></textarea>
             <button type="submit">Submit Post</button>
         </form>
 
