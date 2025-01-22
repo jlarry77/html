@@ -16,8 +16,12 @@
     <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
         <nav class="nav-section">
-            <button class="admin-login" type="submit">Login</button>
-            <button class="admin-logout" type="submit">Log Out</button>
+            <form action="includes/login.inc.php">
+                <button class="admin-login" type="submit">Login</button>
+            </form>    
+            <form action="includes/logout.inc.php">
+                <button class="admin-logout" type="submit">Log Out</button>
+            </form>
         </nav>
     </header>
 
