@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Retrieve user input from the form submission
     $username = $_POST["username"]; // The username provided by the user
     $pwd = $_POST["pwd"]; // The password provided by the user
-    $email = $_POST["email"]; // The email provided by the user
 
     try {
         // Include required files for database connection and functionality
@@ -18,13 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errors = [];
 
         // Validate if all input fields are filled
-        if (is_input_empty($username, $pwd, $email)) {
+        if (is_input_empty($username, $pwd)) {
             $errors["empty_input"] = "Please fill in all fields.";
-        }
-
-        // Validate if the email format is invalid
-        if (is_email_invalid($email)) {
-            $errors["invalid_email"] = "Invalid e-mail used.";
         }
 
         // Check if the username is already taken in the database
@@ -32,10 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $errors["username_taken"] = "Username already in use.";
         }
 
-        // Check if the email is already registered in the database
-        if (is_email_registered($pdo, $email)) {
-            $errors["email_used"] = "E-mail already registered.";
-        }
 
         // Include session configuration for storing errors and data
         require_once 'config_session.inc.php';
@@ -47,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Save user input data (except password) to the session for repopulating the form
             $signupData = [
                 "username" => $username,
-                "email" => $email
             ];
 
             $_SESSION["signup_data"] = $signupData;
@@ -58,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
         // If no errors, create the user in the database
-        create_user($pdo, $username, $pwd, $email);
+        create_user($pdo, $username, $pwd);
 
         // Redirect back to the admin page with a success message
         header("Location: ../admin.php?signup=success");
