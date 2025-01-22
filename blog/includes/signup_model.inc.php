@@ -18,7 +18,7 @@ function get_username(object $pdo, string $username) {
 
 
 function set_user(object $pdo, string $username, string $pwd) {
-    $query = "INSERT INTO users (user_name, pwd) VALUES (:user_name, :pwd);";
+    $query = "INSERT INTO users (user_name, user_pw) VALUES (:user_name, :user_pwd);";
     $stmt = $pdo->prepare($query);
     
     $options = [
@@ -28,6 +28,6 @@ function set_user(object $pdo, string $username, string $pwd) {
     $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
     
     $stmt->bindParam(":username", $username);
-    $stmt->bindParam(":pwd", $hashedPwd);
+    $stmt->bindParam(":user_pwd", $hashedPwd);
     $stmt->execute();
 }
