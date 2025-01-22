@@ -25,7 +25,6 @@
         <form action="includes/signup.inc.php" method="POST">
             <input type="text" name="username" placeholder="User Name">
             <input type="password" name="pwd" placeholder="Password">
-            <input type="text" name="email" placeholder="e-mail">
             <button type="submit">Add User</button> 
         </form>
         <?php check_signup_errors(); ?>
