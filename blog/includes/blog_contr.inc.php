@@ -13,8 +13,11 @@ function is_post_empty(string $title, string $blog_post) {
     }
 }
 
+function create_post(object $pdo, string $username, string $title, string $blog_post) {
 
-
-function create_post(object $pdo, string $title, string $blog_post) {
-   set_post($pdo, $title, $blog_post);
-}
+    $username = $_SESSION['username'] ?? null;
+    if (!$username) {
+        die("You must be logged in to submit a blog post.");
+    }
+   input_blog($pdo, $username, $title, $blog_post);
+} 

@@ -1,8 +1,29 @@
 <?php
 
+session_start();
+
+ini_set('display_errors', 1);               // These three lines added by Chatgtp
+ini_set('display_startup_errors', 1);       // To display error messages
+error_reporting(E_ALL); 
+
 
 // Check if the request method is POST (i.e., the form was submitted)
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    // Retrieve the logged-in username
+    $username = $_SESSION['username'] ?? null; // Default to null if not logged in
+
+                                var_dump($_SESSION); 
+
+    if (!$username) {
+    die("You must be logged in to submit a blog post.");
+}
+
+
+    // Retrieve Blog Title and Post from POST request on admin.php //
+    $title = trim($_POST['title'] ?? '');
+    $blog_post = trim($_POST['blog_post'] ?? '');
+
 
     try {
         // Include required files for database connection and functionality
@@ -37,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             die(); // Terminate the script
         }
 
-        // If no errors, create the user in the database
-        create_post($pdo, $title, $blog_post);
+        // If no errors, create the post in the database
+        create_post($pdo, $username, $title, $blog_post);
 
         // Redirect back to the admin page with a success message
         header("Location: ../admin.php?post=success");

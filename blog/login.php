@@ -1,5 +1,8 @@
 <?php
-
+   print_r($_SESSION);
+ini_set('display_errors', 1);               // These three lines added by Chatgtp
+ini_set('display_startup_errors', 1);       // To display error messages
+error_reporting(E_ALL); 
 ?>
 
 
@@ -34,7 +37,7 @@
             <!-- Inputs for Form -->
             <div class="user">
                 <h3>User Name <i>required</i></h3>
-                <input type="text" name="user_name" placeholder="User Name">
+                <input type="text" name="username" placeholder="User Name">
             </div>
             
             <div class="password">

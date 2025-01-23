@@ -1,5 +1,11 @@
 
 <?php
+ 
+    session_start();
+
+
+
+    //print_r($_SESSION);
     require_once 'includes/dbh.inc.php';
     require_once 'includes/signup_view.inc.php';
     require_once 'includes/login_view.inc.php';
@@ -16,6 +22,8 @@
 </head>
 <body>
 
+
+   
     <!-- Blog Input Section -->
      <div class="blog-input">
         <h3>Blog Content Creation</h3>

@@ -1,7 +1,7 @@
 <?php
 
-ini_set('session.use_only_cookies', 1);     //  Set Cookies to True (1)
-ini_set('session.use_strict_mode', 1);      //  Set Strict Mode to True (1)
+// ini_set('session.use_only_cookies', 1);     //  Set Cookies to True (1)
+// ini_set('session.use_strict_mode', 1);      //  Set Strict Mode to True (1)
 
 session_set_cookie_params([                 //  Accepts array inside parameters
     'lifetime' => 1800,                     //  Lifetime of cookie in seconds
