@@ -197,6 +197,9 @@ button:hover {
     color: var(--secondary-color)
 }
 
+.main-content article h2 a {
+    color: #000000;
+}
 
 /* Body Styling -> Login.php */
 
@@ -384,6 +387,57 @@ button:hover {
 .blog-main button {
     width: 135px;
 }
+
+
+/* Blog.php Styling */
+.blog-body {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    height: 100vh;
+
+}
+.main-post {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    padding: 0px;
+    margin: 20px;
+    height: auto;
+    width: 75%;
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+
+.main-post .post-article {
+    padding: 0px;
+    margin: 10px;
+    height: auto;
+    width: 99%;
+
+}
+
+.main-post .post-article h1{
+    padding: 10px;
+    display: flex;
+}
+
+.main-post .post-article div{
+    padding: 10px;
+    display: flex;
+}
+.main-post .post-article p{
+    padding: 10px;
+    display: flex;
+}
+
+.main-post .post-article small {
+    color: var(--secondary-color);
+    font-size: .8em;
+}
+
+
 
 /* Footer -> All Pages */
 

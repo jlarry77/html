@@ -47,6 +47,7 @@ try {
         <h1 class="title-section">Blog Title (TBD)</h1>
         <div class="header-right">
             <nav class="nav-section">
+                <a href="index.php">Home</a>
                 <a href="admin.php?login=success">Admin</a>
                 <a href="login.php">Log In</a>
                 <form action="includes/logout.inc.php">
@@ -62,17 +63,17 @@ try {
         </div>
 
     </header>
-
-    <main>
-        <article>
+    <div class="blog-body">
+    <main class="main-post">
+        <article class="post-article">
         <h1><?php echo htmlspecialchars($post['title']); ?></h1>
         <p><small>By <?php echo htmlspecialchars($post['username']); ?> on <?php echo htmlspecialchars($post['blog_date']); ?></small></p>
         <div><?php echo nl2br(htmlspecialchars($post['blog_post'])); ?></div>
         </article>
     </main>
-
-    <footer>
-        <a href="index.php">Back to Home</a>
+    </div>
+    <footer class="footer">
+        
     </footer>
 </body>
 </html>
