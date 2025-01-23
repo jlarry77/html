@@ -63,6 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // Redirect back to the admin page with a success message
         header("Location: ../admin.php?post=success");
+        
+            
+
 
         // Close the database connection and free resources
         $pdo = null;

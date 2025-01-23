@@ -9,6 +9,7 @@
     require_once 'includes/dbh.inc.php';
     require_once 'includes/signup_view.inc.php';
     require_once 'includes/login_view.inc.php';
+    require_once 'includes/blog_view.inc.php';
 ?>
 
 
@@ -43,7 +44,10 @@
             <input type="password" name="pwd" placeholder="Password">
             <button type="submit">Add User</button> 
         </form>
-        <?php check_signup_errors(); ?>
+        <?php 
+            check_signup_errors();
+            display_messages();
+        ?>
     </div>
 
 

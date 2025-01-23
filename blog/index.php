@@ -1,5 +1,6 @@
 <?php
-
+    require_once 'includes/dbh.inc.php';
+    require_once 'includes/blog_model.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@
 
     <div class="main-content">
         <?php 
-                require_once 'includes/blog_model.inc.php';
+            output_blogs($pdo, 'title', 'blog_post')
         ?>
     </div>
     

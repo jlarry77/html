@@ -20,3 +20,20 @@ function check_blog_errors() {
     }
     
 }
+
+function display_messages() {
+    // Check for success message in the URL query
+    if (isset($_GET['post']) && $_GET['post'] === 'success') {
+        echo '<p class="success-message">Your post was successfully submitted!</p>';
+    }
+
+    // Display errors if any are stored in the session
+    if (isset($_SESSION["errors_signup"])) {
+        $errors = $_SESSION["errors_signup"];
+        foreach ($errors as $error) {
+            echo '<p class="error-message">' . $error . '</p>';
+        }
+        // Clear errors after displaying
+        unset($_SESSION["errors_signup"]);
+    }
+}
