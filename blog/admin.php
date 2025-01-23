@@ -32,6 +32,7 @@
                 <button class="admin-logout" type="submit">Log Out</button>
             </form>
         </nav>
+        <?php login_status(); ?>
     </header>
 
    

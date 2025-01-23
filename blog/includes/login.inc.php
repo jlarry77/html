@@ -2,7 +2,7 @@
  session_start();
 
 ini_set('display_errors', 1);               // These three lines added by Chatgtp
-ini_set('display_startup_errors', 1);       // To display error messages
+ini_set('display_startup_errors', 1);       // To display errors messages
 error_reporting(E_ALL); 
 
 
@@ -24,11 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             require_once 'login_contr.inc.php';
 
             //  Error Handlers -> Stored as an array //
-            $error =[];
+            $errors =[];
 
             // Check for empty input fields //
             if (is_input_empty($username, $password)) {
-                $error["empty_input"] = "Please fill in all fields.";
+                $errors["empty_input"] = "Please fill in all fields.";
             }
 
             // Fetch user information from the database using dbh.inc.php //
@@ -36,12 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             //  Ensure that user name exists in database //
             if (is_username_wrong($result)) {
-                $error["login_incorrect"] = "Username not found.";
+                $errors["login_incorrect"] = "Username not found.";
             }
 
             // Ensure that password is correct //
             if (!is_username_wrong($result) && is_password_wrong($password, $result["user_pw"])) {
-                $error["login_incorrect"] = "Password is incorrect.";
+                $errors["login_incorrect"] = "Password is incorrect.";
             }
 
             // var_dump($result);
@@ -50,9 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             require_once 'config_session.inc.php';
 
             // Store any errors in the Session and redirect back to login.php //
-            if ($error) {
-                $_SESSION["errors_login"] = $error;
+            if ($errors) {
+                $_SESSION["errors_login"] = $errors;
                 header("Location: ../login.php");
+
                 die();
             }
 

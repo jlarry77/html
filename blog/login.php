@@ -1,8 +1,10 @@
 <?php
-   print_r($_SESSION);
-ini_set('display_errors', 1);               // These three lines added by Chatgtp
-ini_set('display_startup_errors', 1);       // To display error messages
-error_reporting(E_ALL); 
+   //print_r($_SESSION);
+session_start();
+require_once 'includes/login_view.inc.php';
+//ini_set('display_errors', 1);               // These three lines added by Chatgtp
+//ini_set('display_startup_errors', 1);       // To display error messages
+//error_reporting(E_ALL); 
 ?>
 
 
@@ -25,6 +27,7 @@ error_reporting(E_ALL);
                 <button class="admin-logout" type="submit">Log Out</button>
             </form>
         </nav>
+        <?php login_status(); ?>
     </header>
     
 

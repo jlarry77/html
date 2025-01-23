@@ -1,6 +1,10 @@
 <?php
+
+    session_start();
+    // print_r($_SESSION);
     require_once 'includes/dbh.inc.php';
     require_once 'includes/blog_model.inc.php';
+    require_once 'includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +26,16 @@
                 <button class="admin-logout" type="submit">Log Out</button>
             </form>
         </nav>
+        <?php
+            login_status();
+        ?>
     </header>
 
     <!-- Main Content / Blog Posts -->
 
     <div class="main-content">
         <?php 
-            output_blogs($pdo, 'title', 'blog_post')
+            output_blogs($pdo, 'title', 'blog_post');
         ?>
     </div>
     
@@ -39,4 +46,4 @@
 
      </footer>
 </body>
-</html>
+</html> 

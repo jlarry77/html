@@ -46,3 +46,14 @@ function check_login_errors() {
         echo '<p>Login Successful</p>';
     }
 }
+
+// Display Login Status
+function login_status() {
+if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
+    // User is logged in
+    echo " You are logged in as " . $_SESSION['username'];
+} else {
+    // User is not logged in
+    echo "You are not logged in.";
+}
+}
