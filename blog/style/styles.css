@@ -1,0 +1,450 @@
+/* Color Variables */
+
+:root {
+    --primary-color: #002153;
+    --secondary-color: #d30000;
+    --accent-color-1: #ffc55a;
+    --accent-color-1a: rgb(255, 197, 90);
+    --accent-color-2: #2c4e80;
+}
+
+/* General Styles */
+
+
+* {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+/* General Link Styling */
+a {
+    text-decoration: none;
+    color:  var(--secondary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--secondary-color);
+}
+
+
+
+/* General Button Styling */
+
+button {
+
+    color: var(--accent-color-2);
+    font-weight: 500;
+    border: none;
+    padding: 10px 15px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .75em;
+    background-color: transparent;
+    border-radius: 8px;;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: #ffffff;
+    border: 1px solid var(--accent-color-2);
+    box-shadow: 0 0 6px var(--secondary-color);
+    transition-duration: 0.2s;
+}
+
+
+/*  Header Styling -> All Pages */
+
+.head-section {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color:#ffffff;
+}
+
+.head-section .title-section {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding:  0px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    width: 15%;
+    font-weight: 900;
+}
+
+.head-section .nav-section {
+    display: flex;
+    padding: 5px 0;
+}
+
+.head-section h1 {
+    color: var(--secondary-color);
+}
+
+.head-section a:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: #ffffff;
+    border: 1px solid var(--accent-color-2);
+    box-shadow: 0 0 6px var(--accent-color-2);
+    transition-duration: 0.2s;
+}
+
+.head-section .header-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-section .log-status {
+    font-size: .7em;
+    color: var(--secondary-color);
+    padding: 10px 10px 10px 0;
+    margin: 0;
+    text-align: right;
+
+}
+
+.head-section a  {
+    margin: 0;
+    width: 95px;
+}
+
+.head-section a {
+    background-color: transparent;
+    color: var(--accent-color-2);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    font-size: .8em;
+    border-radius: 9px;
+    width: 60px;
+}
+
+
+/* Header Bottom Border */
+.blue {
+    background-color: var(--accent-color-2);
+    width: 100%;
+    height: 5px;
+}
+
+.orange {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 5px;
+}
+
+.yellow {
+    background-color: var(--accent-color-1);
+    width: 100%;
+    height: 5px;
+}
+
+
+/*  Body Styling -> Index.php */
+
+.body-box {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 75%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px 0px;
+}
+
+.main-content article {
+    padding: 40px 15px;
+    text-align: left;
+    box-shadow: 0 0 0px #bbbbbb;
+    border-radius: 5px;
+
+}
+
+.main-content article h2 {
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.main-content article p {
+    font-weight:500;
+    font-size: .9em;
+}
+
+.main-content article small {
+    font-weight: 100;
+    font-size: .7em;
+    color: var(--secondary-color)
+}
+
+
+/* Body Styling -> Login.php */
+
+/* Center the form on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height to center vertically */
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+/* Styling the form */
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: #ffffff; /* Slightly transparent black */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Set a max width for smaller screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Styling the Form Text */
+.login-container i {
+    font-weight: 100;
+    font-size: .8em;
+    color: var(--secondary-color);
+}
+
+/* Input field styling */
+.login_form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238); 
+    color: var(--primary-color);
+    font-size: 1em;
+    outline: none;
+}
+
+.login_form input::placeholder {
+    color: var(--primary-color); /* Light gray placeholder text */
+    font-size: .6em;
+}
+
+/* Headings within the form */
+.login_form h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Red color for headings */
+    border-radius: 9px; /* Optional if you still want rounded corners */
+    background-color: transparent; /* Use no background */
+}
+
+
+.login_form .user, .password, .submit-button {
+    background-color: transparent;
+}
+
+
+
+
+/*  Body Styling -> Admin.php */
+
+
+
+/* Center the form on the page */
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+/* Styling the form */
+.blog-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: #ffffff; /* Slightly transparent black */
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+
+}
+
+/* Styling the Form Text */
+
+/* Input field styling */
+.blog-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238); 
+    color: var(--primary-color);
+    font-size: 1em;
+    outline: none;
+}
+
+.blog-input input::placeholder {
+    color: var(--primary-color); /* Light gray placeholder text */
+    font-size: .6em;
+}
+
+/* Headings within the form */
+.blog-input h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Red color for headings */
+    border-radius: 9px; /* Optional if you still want rounded corners */
+    background-color: transparent; /* Use no background */
+}
+
+/* Text Area */
+.blog-input textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238); 
+    color: var(--primary-color);
+    font-size: 1em;
+    outline: none;
+}
+
+.blog-input textarea::placeholder {
+    color: var(--primary-color); /* Light gray placeholder text */
+    font-size: .6em;
+}
+
+
+/* Input field styling */
+
+.index-registration {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: #ffffff; /* Slightly transparent black */
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+.index-registration input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238); 
+    color: var(--primary-color);
+    font-size: 1em;
+    outline: none;
+}
+
+.index-registration input::placeholder {
+    color: var(--primary-color); /* Light gray placeholder text */
+    font-size: .6em;
+}
+
+/* Headings within the form */
+.index-registration h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Red color for headings */
+    border-radius: 9px; /* Optional if you still want rounded corners */
+    background-color: transparent; /* Use no background */
+}
+
+.blog-main button {
+    width: 135px;
+}
+
+/* Footer -> All Pages */
+
+.footer {
+    background-color: var(--primary-color);
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meyer's Style Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
