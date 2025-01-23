@@ -10,6 +10,8 @@
     require_once 'includes/signup_view.inc.php';
     require_once 'includes/login_view.inc.php';
     require_once 'includes/blog_view.inc.php';
+
+    log_redirect();
 ?>
 
 

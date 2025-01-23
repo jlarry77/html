@@ -4,21 +4,17 @@
 //  Enforce strict typing to ensure proper variable type usage //
 declare(strict_types=1);
 
-// Output the username if user is loggin in, otherwise indicate that the user is not logged in //
-function output_username()
-{
-    // Check if a user session exists with a "user_id" key //
-    if (isset($_SESSION["user_id"])) {
-
-        // Output the logged-in username stored in the session //
-        echo "You are logged in as " . $_SESSION["username"];
-
+// Redirect back to log in if user is not logged in //
+function log_redirect() {
+    if (!isset($_SESSION['user_id']) && !isset($_SESSION['username'])) {
+        // User is not logged in
+        header("Location:  ../login.php");
+        exit();	
     } else {
-
-        // Inform the user they are not logged in //
-        echo "You are not logged in";
+        // User is logged in
+        
     }
-}
+    }
 
 
 // Display login-related errors or success messages //
