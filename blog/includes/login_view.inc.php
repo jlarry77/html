@@ -8,7 +8,8 @@ declare(strict_types=1);
 function log_redirect() {
     if (!isset($_SESSION['user_id']) && !isset($_SESSION['username'])) {
         // User is not logged in
-        header("Location:  ../login.php");
+        header("Location:  login.php");
+        
         exit();	
     } else {
         // User is logged in

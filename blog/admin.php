@@ -26,28 +26,37 @@
 <body>
 
         <!-- Header and Navigation Bar-->
-    <header class="head-section">
+        <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
-        <nav class="nav-section">
-            <a href="index.php">Home</a>
-            <form action="includes/logout.inc.php">
-                <button class="admin-logout" type="submit">Log Out</button>
-            </form>
-        </nav>
-        <?php login_status(); ?>
+        <div class="header-right">
+            <nav class="nav-section">
+                <a href="index.php">Home</a>
+                <form action="includes/logout.inc.php">
+                    <button class="admin-logout" type="submit">Log Out</button>
+                </form>
+            </nav>
+
+            <div class="log-status">
+                <?php
+                    login_status();
+                ?>
+            </div>
+        </div>
+
     </header>
 
    
     <!-- Blog Input Section -->
-     <div class="blog-input">
-        <h3>Blog Content Creation</h3>
-        <form action="includes/blog.inc.php" method="POST">
-            <input type="text" name="title" placeholder="Post Title">
-            <textarea name="blog_post" placeholder="Blog Content"></textarea>
-            <button type="submit">Submit Post</button>
-        </form>
+    <div class="blog-main"> 
+        <div class="blog-input">
+            <h3>Blog Content Creation</h3>
+            <form action="includes/blog.inc.php" method="POST">
+                <input type="text" name="title" placeholder="Post Title">
+                <textarea name="blog_post" placeholder="Blog Content"></textarea>
+                <button type="submit">Submit Post</button>
+            </form>
 
-     </div>
+        </div>
 
     <!-- Registration Section -->
     <div class="index-registration">
@@ -62,7 +71,7 @@
             display_messages();
         ?>
     </div>
-
+    </div>
 
 
 </body>

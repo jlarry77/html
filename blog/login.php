@@ -21,13 +21,22 @@ require_once 'includes/login_view.inc.php';
         <!-- Header and Navigation Bar-->
         <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
-        <nav class="nav-section">
-            <a href="index.php">Home</a>
-            <form action="includes/logout.inc.php">
-                <button class="admin-logout" type="submit">Log Out</button>
-            </form>
-        </nav>
-        <?php login_status(); ?>
+        <div class="header-right">
+            <nav class="nav-section">
+                <a href="admin.php?login=success">Admin</a>
+                <a href="index.php">Home</a>
+                <form action="includes/logout.inc.php">
+                    <button class="admin-logout" type="submit">Log Out</button>
+                </form>
+            </nav>
+
+            <div class="log-status">
+                <?php
+                    login_status();
+                ?>
+            </div>
+        </div>
+
     </header>
     
 

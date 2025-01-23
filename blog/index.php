@@ -20,25 +20,35 @@
     <!-- Header and Navigation Bar-->
     <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
-        <nav class="nav-section">
-            <a href="login.php">Log In</a>
-            <form action="includes/logout.inc.php">
-                <button class="admin-logout" type="submit">Log Out</button>
-            </form>
-        </nav>
-        <?php
-            login_status();
-        ?>
+        <div class="header-right">
+            <nav class="nav-section">
+                <a href="admin.php?login=success">Admin</a>
+                <a href="login.php">Log In</a>
+                <form action="includes/logout.inc.php">
+                    <button class="admin-logout" type="submit">Log Out</button>
+                </form>
+            </nav>
+
+            <div class="log-status">
+                <?php
+                    login_status();
+                ?>
+            </div>
+        </div>
+
     </header>
 
     <!-- Main Content / Blog Posts -->
-
+        <!--<div class="blue"></div>-->
+        <!--<div class="orange"></div>-->
+        <!--<div class="yellow"></div>-->
+    <div class="body-box">
     <div class="main-content">
         <?php 
             output_blogs($pdo, 'title', 'blog_post');
         ?>
     </div>
-    
+    </div>    
 
     <!-- Footer Section -->
      <footer class="footer">
