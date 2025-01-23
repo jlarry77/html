@@ -42,7 +42,7 @@ try {
 }
 
 function output_blogs(object $pdo) {
-    $query = "SELECT username, title, blog_date, blog_post
+    $query = "SELECT blog_id, username, title, blog_date, blog_post
               FROM blog_posts
               ORDER BY blog_date DESC;";
 
@@ -54,9 +54,10 @@ function output_blogs(object $pdo) {
         // Fetch and display the results
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "<article>";
-            echo "<h2>" . htmlspecialchars($row['title']) . "</h2>";
+            // Make the title a clickable link
+            echo "<h2><a href='blog.php?blog_id=" . ($row['blog_id']) . "'>" . htmlspecialchars($row['title']) . "</a></h2>";
             echo "<p><small>By " . htmlspecialchars($row['username']) . " on " . htmlspecialchars($row['blog_date']) . "</small></p>";
-            echo "<div>" . nl2br(htmlspecialchars($row['blog_post'])) . "</div>";
+            echo "<div>" . nl2br(htmlspecialchars(substr($row['blog_post'], 0, 100))) . "...</div>"; // Display a preview of the post
             echo "</article>";
         }
     } catch (PDOException $e) {

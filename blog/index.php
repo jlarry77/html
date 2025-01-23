@@ -5,6 +5,10 @@
     require_once 'includes/dbh.inc.php';
     require_once 'includes/blog_model.inc.php';
     require_once 'includes/login_view.inc.php';
+
+    ini_set('display_errors', 1);               // These three lines added by Chatgtp
+    ini_set('display_startup_errors', 1);       // To display error messages
+    error_reporting(E_ALL); 
 ?>
 
 <!DOCTYPE html>
