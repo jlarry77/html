@@ -31,9 +31,6 @@
         <div class="header-right">
             <nav class="nav-section">
                 <a href="index.php">Home</a>
-                <form action="includes/logout.inc.php">
-                    <button class="admin-logout" type="submit">Log Out</button>
-                </form>
             </nav>
 
             <div class="log-status">
@@ -72,7 +69,15 @@
         ?>
     </div>
     </div>
+    <footer class="footer">
+        <div class="foot-container">
 
+        </div>
+        <form action="includes/logout.inc.php">
+            <button class="admin-logout" type="submit">Log Out</button>
+        </form>
+
+     </footer>
 
 </body>
 </html>

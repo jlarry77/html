@@ -25,9 +25,6 @@ require_once 'includes/login_view.inc.php';
             <nav class="nav-section">
                 <a href="admin.php?login=success">Admin</a>
                 <a href="index.php">Home</a>
-                <form action="includes/logout.inc.php">
-                    <button class="admin-logout" type="submit">Log Out</button>
-                </form>
             </nav>
 
             <div class="log-status">
@@ -62,7 +59,15 @@ require_once 'includes/login_view.inc.php';
             </div>
         </form>
     </div>
+    <footer class="footer">
+        <div class="foot-container">
 
+        </div>
+        <form action="includes/logout.inc.php">
+            <button class="admin-logout" type="submit">Log Out</button>
+        </form>
+
+     </footer>
 
 </body>
 </html>

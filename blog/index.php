@@ -6,8 +6,8 @@
     require_once 'includes/blog_model.inc.php';
     require_once 'includes/login_view.inc.php';
 
-    ini_set('display_errors', 1);               // These three lines added by Chatgtp
-    ini_set('display_startup_errors', 1);       // To display error messages
+    ini_set('display_errors', 1);               // These three lines 
+    ini_set('display_startup_errors', 1);       // Display error messages
     error_reporting(E_ALL); 
 ?>
 
@@ -28,9 +28,6 @@
             <nav class="nav-section">
                 <a href="admin.php?login=success">Admin</a>
                 <a href="login.php">Log In</a>
-                <form action="includes/logout.inc.php">
-                    <button class="admin-logout" type="submit">Log Out</button>
-                </form>
             </nav>
 
             <div class="log-status">
@@ -56,7 +53,12 @@
 
     <!-- Footer Section -->
      <footer class="footer">
+        <div class="foot-container">
 
+        </div>
+        <form action="includes/logout.inc.php">
+            <button class="admin-logout" type="submit">Log Out</button>
+        </form>
 
      </footer>
 </body>
