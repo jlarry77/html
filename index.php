@@ -10,7 +10,7 @@
     <img src="/images/digital-sphere.jpg" alt="Digital Sphere">
     <header class = "header">
         <div class="title">
-            <h1 style="color:red;">Online</h1><h1> Digital Playground</h1>
+            <h1 style="color:#003793;">Online</h1><h1> Digital Playground</h1>
         </div>
         <div class="head-org">
             <div class = "head_links">

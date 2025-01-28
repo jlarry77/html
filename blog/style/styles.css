@@ -12,7 +12,6 @@
 
 
 * {
-    background-color: #ffffff;
     margin: 0px;
     padding: 0px;
     font-family: Helvetica, sans-serif;
@@ -39,7 +38,6 @@ a:visited {
 /* General Button Styling */
 
 button {
-
     color: var(--accent-color-2);
     font-weight: 500;
     border: none;
@@ -70,26 +68,31 @@ button:hover {
     justify-content: space-between;
     padding: 0px 20px;
     background-color:#ffffff;
+    background-image: url("../images/blue_digital_sphere_banner.jpg");
+    background-size: cover;
 }
 
 .head-section .title-section {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: transparent;
     padding:  0px;
     border-radius: 8px;
     font-size: 1.5em;
     width: 15%;
-    font-weight: 900;
+    font-weight: 100;
 }
 
 .head-section .nav-section {
     display: flex;
     padding: 5px 0;
+    background-color: transparent;
+
 }
 
 .head-section h1 {
-    color: var(--secondary-color);
+    color: rgb(255,255,255,.65);
+    font-family:Helvetica;
 }
 
 .head-section a:hover {
@@ -104,6 +107,24 @@ button:hover {
 .head-section .header-right {
     display: flex;
     flex-direction: column;
+    background-color: transparent;
+}
+
+/* Assuming you have a rule for .admin-logout button */
+.admin-logout {
+    background-color: transparent; /* Default background */
+    padding: 10px 20px;
+    color: #ffffff; /* Optional: Set button text color */
+    cursor: pointer;
+}
+
+.admin-logout:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: #ffffff;
+    border: 1px solid var(--accent-color-2);
+    box-shadow: 0 0 6px var(--accent-color-2);
+    transition-duration: 0.2s;
 }
 
 .head-section .log-status {
@@ -112,6 +133,7 @@ button:hover {
     padding: 10px 10px 10px 0;
     margin: 0;
     text-align: right;
+    background-color: transparent;
 
 }
 
@@ -122,7 +144,7 @@ button:hover {
 
 .head-section a {
     background-color: transparent;
-    color: var(--accent-color-2);
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     text-align: center;
@@ -161,6 +183,7 @@ button:hover {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
+    
 }
 
 .main-content {
@@ -168,7 +191,7 @@ button:hover {
     flex-direction: column;
     align-items: left;
     width: 75%;
-    background-color: #ffffff;
+    background-color: rgb(255,255,255,.80);
     border-radius: 8px;
     margin: 20px 0px;
 }
@@ -200,6 +223,18 @@ button:hover {
 .main-content article h2 a {
     color: #000000;
 }
+
+/* Restrict number of lines shown for each post */
+.main-content article div {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Replace '3' with the number of lines you want to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em; /* Adjust based on your line height (line height * number of lines) */
+    line-clamp: 3;
+}
+
 
 /* Body Styling -> Login.php */
 
@@ -241,7 +276,7 @@ button:hover {
     margin: 5px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgb(238, 238, 238); 
+    background-color: rgb(44,78,128,.25); 
     color: var(--primary-color);
     font-size: 1em;
     outline: none;
@@ -267,10 +302,7 @@ button:hover {
 
 
 
-
 /*  Body Styling -> Admin.php */
-
-
 
 /* Center the form on the page */
 .blog-main {
@@ -297,7 +329,6 @@ button:hover {
 
 }
 
-/* Styling the Form Text */
 
 /* Input field styling */
 .blog-input input {
@@ -306,7 +337,7 @@ button:hover {
     margin: 5px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgb(238, 238, 238); 
+    background-color: rgb(44,78,128,.25); 
     color: var(--primary-color);
     font-size: 1em;
     outline: none;
@@ -333,7 +364,7 @@ button:hover {
     margin: 5px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgb(238, 238, 238); 
+    background-color: rgb(44,78,128,.25); 
     color: var(--primary-color);
     font-size: 1em;
     outline: none;
@@ -365,7 +396,7 @@ button:hover {
     margin: 5px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgb(238, 238, 238); 
+    background-color: rgb(44,78,128,.25); 
     color: var(--primary-color);
     font-size: 1em;
     outline: none;

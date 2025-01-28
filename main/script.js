@@ -96,7 +96,7 @@ function render() {
 
     ctx.beginPath();
     ctx.arc(x, y, 1, 0, 2 * Math.PI); // Draw a small dot
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#6397C9';
     ctx.fill();
   });
 
@@ -116,7 +116,7 @@ function render() {
     ctx.beginPath();
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.95)';
+    ctx.strokeStyle = '#003793';
     ctx.lineWidth = 0.5;
     ctx.stroke();
   });
