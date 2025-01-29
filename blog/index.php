@@ -1,5 +1,9 @@
 <?php
 
+
+
+
+
     session_start();
     // print_r($_SESSION);
     require_once 'includes/dbh.inc.php';
@@ -46,7 +50,7 @@
     <div class="body-box">
     <div class="main-content">
         <?php 
-            output_blogs($pdo, 'title', 'blog_post');
+            output_blogs($pdo, 'title', 'blog_post', 'image_path');
         ?>
     </div>
     </div>    
@@ -59,7 +63,7 @@
         <form action="includes/logout.inc.php">
             <button class="admin-logout" type="submit">Log Out</button>
         </form>
-
+ 
      </footer>
 </body>
 </html> 

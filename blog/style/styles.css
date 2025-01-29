@@ -181,6 +181,9 @@ button:hover {
 }
 
 .main-content article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: aliceblue;
     padding: 20px 15px;
     text-align: left;
@@ -188,7 +191,7 @@ button:hover {
     border-radius: 2px;
     line-height: 1.2;
     margin-bottom: 4px;
-
+    height: 150px;
 }
 
 .main-content article h2 {
@@ -211,6 +214,7 @@ button:hover {
     color: var(--primary-color);
 }
 
+
 /* Restrict number of lines shown for each post */
 .main-content article div {
     display: -webkit-box;
@@ -218,7 +222,7 @@ button:hover {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 4.5em; /* Adjust based on your line height (line height * number of lines) */
+    max-height: 150px; /* Adjust based on your line height (line height * number of lines) */
     line-clamp: 3;
 }
 

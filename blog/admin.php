@@ -3,8 +3,6 @@
  
     session_start();
 
-
-
     //print_r($_SESSION);
     require_once 'includes/dbh.inc.php';
     require_once 'includes/signup_view.inc.php';
@@ -13,7 +11,6 @@
 
     log_redirect();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,18 +25,17 @@
         <!-- Header and Navigation Bar-->
         <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
+            <?php check_blog_errors(); ?>
         <div class="header-right">
             <nav class="nav-section">
                 <a href="index.php">Home</a>
             </nav>
-
             <div class="log-status">
                 <?php
                     login_status();
                 ?>
             </div>
         </div>
-
     </header>
 
    
@@ -47,9 +43,10 @@
     <div class="blog-main"> 
         <div class="blog-input">
             <h3>Blog Content Creation</h3>
-            <form action="includes/blog.inc.php" method="POST">
+            <form action="includes/blog.inc.php" method="POST" enctype="multipart/form-data">
                 <input type="text" name="title" placeholder="Post Title">
                 <textarea name="blog_post" placeholder="Blog Content"></textarea>
+                <input type="file" name="image" id="image" accept="image/*">
                 <button type="submit">Submit Post</button>
             </form>
 
