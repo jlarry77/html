@@ -5,7 +5,7 @@
     --secondary-color: #d30000;
     --accent-color-1: #ffc55a;
     --accent-color-1a: rgb(255, 197, 90);
-    --accent-color-2: #2c4e80;
+    --accent-color-2: #dfdfdf;
 }
 
 /* General Styles */
@@ -172,8 +172,9 @@ button:hover {
 
 .main-content {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Even spacing */
+    gap: 20px; /* 20px spacing between items */
     width: 75%;
     background-color: var(--accent-color-2);
     border-radius: 8px;
@@ -181,42 +182,82 @@ button:hover {
 }
 
 .main-content article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex: 1 1 calc(33.33% - 20px); /* Ensures three items per row with spacing */
     background-color: aliceblue;
-    padding: 20px 15px;
+    padding: 0; /* Remove padding so image fills top */
     text-align: left;
     box-shadow: 0 0 1px #0f0f0f;
-    border-radius: 2px;
-    line-height: 1.2;
-    margin-bottom: 4px;
-    height: 150px;
+    border-radius: 10px;
+    min-height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
+/* Ensure images scale properly within articles */
+.blog-pic {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Fixed height to take up half of article */
+    overflow: hidden;
+}
+
+.blog-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Position the title and small text over the image */
+.blog-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.blog-overlay h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.blog-overlay small {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Ensure blog text appears below */
+.blog-text {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ensure consistent text display */
 .main-content article h2 {
     font-weight: 900;
     font-size: 1.4em;
 }
 
 .main-content article p {
-    font-weight:500;
+    font-weight: 500;
     font-size: .9em;
 }
 
 .main-content article small {
     font-weight: 100;
     font-size: .7em;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
-
-.main-content article h2 a {
-    color: var(--primary-color);
-}
-
 
 /* Restrict number of lines shown for each post */
-.main-content article div {
+.main-content article .blog-text div {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Replace '3' with the number of lines you want to show */
     -webkit-box-orient: vertical;
@@ -225,6 +266,7 @@ button:hover {
     max-height: 150px; /* Adjust based on your line height (line height * number of lines) */
     line-clamp: 3;
 }
+
 
 /* Footer Styling */
 
@@ -456,50 +498,68 @@ button:hover {
 .blog-body {
     display: flex;
     background-color: var(--accent-color-2);
-    justify-content: center;
-    height: 100vh;
-
+    justify-content: center; 
+    height: auto;
+    padding: 20px 0;
 }
+
 .main-post {
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: row;
-    overflow: visible;
-    padding: 0px;
-    margin: 20px;
-    height: auto;
-    width: 75%;
     background-color: #ffffff;
-    border-radius: 9px;
-}
-
-.main-post .post-article {
-    padding: 0px;
-    margin: 10px;
-    height: auto;
-    width: 99%;
-
-}
-
-.main-post .post-article h1{
-    padding: 10px;
     display: flex;
+    flex-direction: column;
+    width: 75%;
+    border-radius: 12px;
+    overflow: hidden; /* Prevents content from spilling */
 }
 
-.main-post .post-article div{
-    padding: 10px;
-    display: flex;
-}
-.main-post .post-article p{
-    padding: 10px;
-    display: flex;
-}
-
-.main-post .post-article small {
-    color: var(--secondary-color);
-    font-size: .8em;
+/* Ensure image spans the width of .main-post */
+.main-post .blog-pic {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
 }
 
+.main-post .blog-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block;
+}
+
+/* Position title & small text over the image */
+.main-post .blog-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    max-width: 70%;
+}
+
+.main-post .blog-content h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.main-post .blog-content small {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Blog text (post) styling */
+/* Ensure .post appears below the image */
+.main-post .post {
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    margin-top: 20px; /* Pushes it below the image */
+    width: 100%;
+}
 
 
 /* Footer -> All Pages */

@@ -30,21 +30,23 @@ function fetch_blog_post(PDO $pdo, int $blog_id) {
     }
 }
 
-// Function to display a blog post
 function blog_post_display(array $post) {
     echo "<article>";
-    echo "<div class='blog-text'>";
-    echo "<h2>" . htmlspecialchars($post['title']) . "</h2>";
-    echo "<p><small>By " . htmlspecialchars($post['username']) . " on " . htmlspecialchars($post['blog_date']) . "</small></p>";
-    echo "<div>" . nl2br(htmlspecialchars($post['blog_post'])) . "</div>";
-    echo "</div>";
 
+    // Image section
+    echo "<div class='blog-pic'>";
     if (!empty($post['image_path'])) {
-        echo "<div class='blog-pic'>";
-        echo "<img src='uploads/" . htmlspecialchars($post['image_path']) . "' alt='Blog Image' style='width:auto; height:125px; border-radius:10px; margin-bottom:10px;'>";
-        echo "</div>";
+        echo "<img src='uploads/" . htmlspecialchars($post['image_path']) . "' alt='Blog Image'>";
     }
+    // Blog title and meta info inside image container
+    echo "<div class='blog-content'>";
+        echo "<h2>" . htmlspecialchars($post['title']) . "</h2>";
+        echo "<p><small>By " . htmlspecialchars($post['username']) . " on " . htmlspecialchars($post['blog_date']) . "</small></p>";
+    echo "</div>";
+    echo "</div>"; // Close .blog-pic
+
+    // Blog text section (must be outside .blog-pic)
+    echo "<div class='post'>" . nl2br(htmlspecialchars($post['blog_post'])) . "</div>";
 
     echo "</article>";
 }
-?>

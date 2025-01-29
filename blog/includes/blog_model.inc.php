@@ -64,20 +64,25 @@ function output_blogs(object $pdo) {
         // Fetch and display the results
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "<article>";
-            // Make the title a clickable link
-                echo "<div class='blog-text'>";
-                echo "<h2><a href='blog.php?blog_id=" . ($row['blog_id']) . "'>" . htmlspecialchars($row['title']) . "</a></h2>";
-                echo "<p><small>By " . htmlspecialchars($row['username']) . " on " . htmlspecialchars($row['blog_date']) . "</small></p>";
-                echo "<div>" . nl2br(htmlspecialchars(substr($row['blog_post'], 0, 100))) . "...</div>"; // Display a preview of the post
-                echo "</div>";
-                // Display the image if available
+        
             echo "<div class='blog-pic'>"; 
             if (!empty($row['image_path'])) {
-                echo "<img src='uploads/" . htmlspecialchars($row['image_path']) . "' alt='Blog Image' style='width:auto; height:125px; border-radius:10px; margin-bottom:10px;'>";
-            echo "</div>";
+                echo "<img src='uploads/" . htmlspecialchars($row['image_path']) . "' alt='Blog Image'>";
             }
-
             
+            // Overlay for title and metadata
+            echo "<div class='blog-overlay'>";
+            echo "<h2><a href='blog.php?blog_id=" . ($row['blog_id']) . "' style='color: white; text-decoration: none;'>" . htmlspecialchars($row['title']) . "</a></h2>";
+            echo "<small>By " . htmlspecialchars($row['username']) . " on " . htmlspecialchars($row['blog_date']) . "</small>";
+            echo "</div>";
+        
+            echo "</div>";
+        
+            // Blog text content
+            echo "<div class='blog-text'>";
+            echo "<div>" . nl2br(htmlspecialchars(substr($row['blog_post'], 0, 100))) . "...</div>"; 
+            echo "</div>";
+        
             echo "</article>";
         }
     } catch (PDOException $e) {

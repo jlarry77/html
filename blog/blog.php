@@ -3,7 +3,7 @@ session_start();
 require_once 'includes/dbh.inc.php';
 require_once 'includes/blog_model.inc.php';
 require_once 'includes/login_view.inc.php';
-require_once 'blog_post_model.inc.php';
+require_once 'includes/blog_post_model.inc.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -26,6 +26,7 @@ $post = fetch_blog_post($pdo, $blog_id);
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="head-section">
         <h1 class="title-section">Blog Title (TBD)</h1>
         <div class="header-right">
@@ -40,6 +41,8 @@ $post = fetch_blog_post($pdo, $blog_id);
         </div>
     </header>
     
+    <!-- Body -->
+
     <div class="blog-body">
         <main class="main-post">
             <?php blog_post_display($post); ?>
